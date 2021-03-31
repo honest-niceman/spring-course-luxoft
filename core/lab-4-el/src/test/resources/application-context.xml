@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="russianPersonBean" class="com.luxoft.springel.lab4.UsualPerson">
+		<property name="id" value="1" />
+		<property name="name" value="Ivan Ivanov" />
+		<property name="age" value="35" />
+		<property name="country" value="#{russiaBean}" />
+		<property name="height" value="1.78" />
+		<property name="isProgrammer" value="true" />
+		<property name="contacts">
+			<list>
+				<value>asd@asd.ru</value>
+				<value>+7-234-456-67-89</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="russiaBean" class="com.luxoft.springel.lab4.Country">
+		<property name="id" value="1" />
+		<property name="name" value="Russia" />
+		<property name="codeName" value="RU" />
+		<property name="capital" value="#{moscowBean}" />
+		<property name="fullCapitalInfo" value="#{moscowBean.getFullCityInfo()}" />
+	</bean>
+
+	<bean id="moscowBean" class="com.luxoft.springel.lab4.City">
+		<property name="id" value="1" />
+		<property name="name" value="Moscow" />
+		<property name="population" value="11000000" />
+	</bean>
+
+	<bean id="operatorsBean" class="com.luxoft.springel.lab4.Operators" >
+		<property name="lessThanTest" value="#{moscowBean.population > parisBean.population}" />
+		<property name="addTest" value="#{moscowBean.population + parisBean.population}" />
+	</bean>
+
+	<bean id="frenchPersonBean" class="com.luxoft.springel.lab4.UsualPerson">
+		<property name="id" value="1" />
+		<property name="name" value="Julien Cado" />
+		<property name="age" value="78" />
+		<property name="country" value="#{franceBean}" />
+		<property name="height" value="1.78" />
+		<property name="isProgrammer" value="true" />
+		<property name="contacts">
+			<list>
+				<value>asd@asd.ru</value>
+				<value>+7-234-456-67-89</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="franceBean" class="com.luxoft.springel.lab4.Country">
+		<property name="id" value="1" />
+		<property name="name" value="France" />
+		<property name="codeName" value="FR" />
+		<property name="capital" value="#{parisBean}" />
+	</bean>
+
+	<bean id="parisBean" class="com.luxoft.springel.lab4.City">
+		<property name="id" value="1" />
+		<property name="name" value="Paris" />
+		<property name="population" value="3000000" />
+	</bean>
+
+</beans>

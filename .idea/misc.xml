@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/db/lab-3-tx/pom.xml" />
+        <option value="$PROJECT_DIR$/db/lab-2-orm/pom.xml" />
+        <option value="$PROJECT_DIR$/db/lab-1-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/core/lab-4-el/pom.xml" />
+        <option value="$PROJECT_DIR$/core/lab-5-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/core/lab-1-core/pom.xml" />
+        <option value="$PROJECT_DIR$/core/lab-2-core/pom.xml" />
+        <option value="$PROJECT_DIR$/core/lab-3-core/pom.xml" />
+        <option value="$PROJECT_DIR$/core/lab-6-final/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd">
+
+	<!-- Activates @Autowired -->
+	<context:annotation-config />
+	<context:component-scan base-package="com.luxoft.springdb.lab2.model, com.luxoft.springdb.lab2.dao" />
+
+	<jdbc:embedded-database id="dataSource">
+	</jdbc:embedded-database>
+
+	<bean id="countryDao" class="com.luxoft.springdb.lab2.dao.jpa.CountryJpaDaoImpl" />
+
+	<bean id="myEmf" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="persistenceUnitName" value="springframework.lab.orm.jpa"/>
+		<property name="dataSource" ref="dataSource" />
+		<property name="persistenceProviderClass" value="org.hibernate.jpa.HibernatePersistenceProvider" />
+	</bean>
+
+</beans>

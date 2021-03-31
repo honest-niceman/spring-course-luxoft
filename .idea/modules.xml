@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/core/lab-1-core/lab-1-core.iml" filepath="$PROJECT_DIR$/core/lab-1-core/lab-1-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db/lab-1-jdbc/lab-1-jdbc.iml" filepath="$PROJECT_DIR$/db/lab-1-jdbc/lab-1-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/lab-2-core/lab-2-core.iml" filepath="$PROJECT_DIR$/core/lab-2-core/lab-2-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db/lab-2-orm/lab-2-orm.iml" filepath="$PROJECT_DIR$/db/lab-2-orm/lab-2-orm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/lab-3-core/lab-3-core.iml" filepath="$PROJECT_DIR$/core/lab-3-core/lab-3-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db/lab-3-tx/lab-3-tx.iml" filepath="$PROJECT_DIR$/db/lab-3-tx/lab-3-tx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/lab-4-el/lab-4-el.iml" filepath="$PROJECT_DIR$/core/lab-4-el/lab-4-el.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/lab-5-aop/lab-5-aop.iml" filepath="$PROJECT_DIR$/core/lab-5-aop/lab-5-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/lab-6-final/lab-6-final.iml" filepath="$PROJECT_DIR$/core/lab-6-final/lab-6-final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/part1 - labs.iml" filepath="$PROJECT_DIR$/.idea/part1 - labs.iml" />
+    </modules>
+  </component>
+</project>
